@@ -9,15 +9,14 @@
             height: 69px;
             font-size: 25px;
             font-weight: bold;
-            align-items: center;
-
-           
+            align-items: center;        
         }
         .menu1 {
             display: flex;
             color:white;
             padding: 18px 10px;
             margin-left: 10px;
+            align-items: center;
 
         }
         .menu2 {
@@ -31,7 +30,6 @@
             color:black;
             background-color: whitesmoke;
             align-items: center;
-            /* padding: 15px; */
 
         }
         .space {
@@ -50,7 +48,6 @@
             font-size: 25px;
             font-weight: bold;
      
-
         }
         .content {
             flex:1;
@@ -59,11 +56,32 @@
         .ad {
             width : 100px;
         }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: green;
+            top: 69px;
+            margin-left: -20px;
+            border-top: 5px solid white;
+        }
+        .menu1 {
+            position: relative;
+        }
+        .menu1:hover .submenu {
+            display: block;
+
+        }
+    
     </style>
 </head>
 <body>
     <div class="menu">
-        <div class="menu1">HOME<i class="fas fa-caret-down"></i></div>
+        <div class="menu1">HOME<i class="fas fa-caret-down"></i>
+        <div class="submenu">
+          <div class="subitem">Lorem.</div>
+          <div class="subitem">Aut?</div>
+          <div class="subitem">Repellendus?</div>
+        </div></div>
         <div class="menu1">BLOG<i class="fas fa-caret-down"></i></div>
         <div class="menu1">CAFE<i class="fas fa-caret-down"></i></div>
         <div class="menu1">NEWS<i class="fas fa-caret-down"></i></div>
