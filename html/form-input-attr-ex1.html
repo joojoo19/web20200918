@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 
+    input 요소는 빈요소로 종료태그가 없음.
+    <form> 태그안에 위치함. 
+    placeholder: 힌트작성  
+    required 무조건 입력해야 함.
+    disabled 입력할 수 없고 전송도 안됨.
+    readonly 입력할 수 없지만 전송 가능.
+    size input요소의 크기
+    maxlength 최대 들어갈 수 있는 글자
+    -->
+    <input type="text" value="donald">
+    <br>
+    <input type="text" placeholder="이름을 입력하세요.">
+    <br>
+    <form action="">
+        <input type="text" required>
+        <input type="submit">
+    </form>
+    <br>
+    <input type="text" disabled>
+    <br>
+    <input type="text" readonly>
+    <br>
+    <input type="number" min="1" max="5">
+    <br>
+    <input type="text" size="50">
+    <br>
+    <input type="text" maxlength="7">
+    <br>
+</body>
+    </html>

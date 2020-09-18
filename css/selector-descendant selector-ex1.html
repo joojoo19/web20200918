@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* div1과 div 사이의 space(후손) div를 선택. 
+        -> div1의 후손 div까지 선택. */
+        .div1 div{
+            color:blue;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Dolores, maxime delectus?</div>
+        <div>Quis, eos iste.</div>
+        <div>
+            <div>Lorem, ipsum dolor.</div>
+        </div>
+    </div>
+    <div class="div2">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Eaque, quas asperiores?</div>
+        <div>Sit, natus voluptatum.</div>
+    </div>
+</body>
+</html>

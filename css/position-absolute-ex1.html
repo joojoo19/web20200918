@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .container {
+            position:relative;
+            border: 5px solid black;
+            width: 500px;
+            height: 250px;
+        }
+        .mydiv {
+            /* absolute 조상요소중 가장 가까운 포지션된 요소 기준.
+            * 포지션된 요소 : positiondl ststic이 아닌 요소. 
+            정상적인 배치에서 빠짐. 
+            이미지일 경우 최상위 레이어로 z-index:-1 <- 숫자 레이어만큼 뒤로 보낼 수 있음*/
+            position: absolute;
+            bottom:0px;
+            right:0px;
+            border: 5px dotted blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mydiv">Lorem ipsum dolor sit amet.</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo reiciendis fuga rerum atque explicabo aut, commodi quae et fugiat laborum amet incidunt eaque omnis. Corporis officiis incidunt culpa animi eum.</p>
+        <p>Molestias repudiandae qui molestiae labore. Corrupti iste eos asperiores reiciendis deleniti explicabo, minus illum dolorem inventore sequi amet iusto perferendis tempora, quis perspiciatis ipsam beatae, quidem qui eligendi id est.</p>
+        
+    </div>
+   
+</body>
+</html>

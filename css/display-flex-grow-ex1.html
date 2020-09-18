@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+       #div1{
+            background-color: blue;
+            font-size: 50px;
+            text-align: right;
+            width: 500px;
+            height: 200px;
+             /* flex:1; => 0,1,0 
+             flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+             flex-shrik  속성값이 0이면 flex container의 크기가 flex item의 
+             크기보다 작아져도 flex item의 크기가 줄어들지 않고 원래 크기로 
+             유지된다. 속성값이 1 이상이면 flex container의 크기가 flex item의 
+             크기보다 작아질 때 flex item의 크기가 flex container의 크기에 맞추어
+             줄어든다. 
+             
+             flex-basis 속성의 값을 auto로 설정하면 flex item은 
+             상대적 flex item(relative flex item)이 되어 콘텐츠의 크기를 기준으로 
+             크기가 결정된다*/
+             /* 0+@ */
+             
+             flex-grow: 1;  
+             /* 500+@ */
+            /* flex-basis: auto; */
+            /* flex-grow : 빈공간을 얼마나 차지할 것인지 값. 
+            속성값이 0이면 flex container의 크기가 커져도 flex item의 크기가 커지지 
+            않고 원래 크기로 유지된다. flex container의 크기가 커질 때 flex item의 
+            크기도 커지게 하려면 1 이상의 값을 속성값으로 설정한다. 
+            속성값이 1 이상이면 flex item의 원래 크기에 상관없이 flex container를 
+            채우도록 flex item의 크기가 커진다.*/
+        }
+        #div2{
+            background-color: yellow;
+            width:200px;
+            flex-grow: 1;
+
+          /* 남은 공간을 1:1로 나눠갖음. */
+        }#div3{
+            background-color: red;
+            flex-grow: 2;
+        }#div4{
+            background-color: yellow;
+        }#div5{
+            background-color: blue;
+        }
+        .container {
+            display: flex;
+            height: 500px;
+
+          
+
+            /* div 안에 요소들이 flex 아이템이 되며 가로로 배치가 기본
+            위치는 justify-content로 변경. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+    </div>
+</body>
+</html>

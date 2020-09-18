@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* .div1의 안에 있는 div만 선택. 후손은 선택하지 않음 */
+     
+     .div1>div {
+         text-decoration: underline;
+     }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Dolores, maxime delectus?</div>
+        <div>Quis, eos iste.</div>
+       <div>
+           <div>Lorem, ipsum dolor.</div>
+       </div>
+    </div>
+    <div class="div2">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Eaque, quas asperiores?</div>
+        <div>Sit, natus voluptatum.</div>
+    </div>
+    
+</body>
+</html>

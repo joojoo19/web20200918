@@ -1,0 +1,22 @@
+.type1 {
+    text-align: center;
+    border-style: inset; border-color: red;
+    border-radius: 15px;
+    box-shadow: 7px 9px 5px tomato;
+}
+p.type1 {
+    color:green;
+}
+#my1 {
+    color:royalblue;
+}
+h1.type1 {
+    font-size: 30px;
+}
+h3{
+    background-color: yellowgreen;
+    text-shadow: 1px 1px 3px gray;
+}
+h3.type1 {
+    font-family:D2coding;
+}
