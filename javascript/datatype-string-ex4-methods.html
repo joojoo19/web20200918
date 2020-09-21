@@ -10,16 +10,17 @@
         var txt = "hello world";
         console.log(txt.length);
 
-        var c = txt.charAt(2); // 두번째 문자 h는 0번부터 시작.
+        var c = txt.charAt(2); // 문자 시작은 0번부터 시작.
         var a = txt.charAt(0);
-        console.log(c); // L
-        console.log(a); // h
+        console.log(c); // l charAt(2)은 0,1,2  2번째 문자 출력.
+        console.log(a); // h 0번째 문자 출력
 
-        var d = txt.substr(6, 3); // substr 6번째 문자 부터 3개를 꺼내옴.
+        var d = txt.substr(6, 3); // substr 6번째 문자 부터 3개를 출력.
         var b = txt.substr(0, 5);
+        var e = txt.substr(6); // substr 파라미터 1개만 쓰면 그 뒤에 오는 글자가 다 출력.
         console.log(d); //wor
         console.log(b); //hello
-
+        console.log(e); //world
 
 
     </script>
