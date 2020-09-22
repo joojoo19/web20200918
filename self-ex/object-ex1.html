@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        function Car(model, speed, color) {
+            this.model = model;
+            this.speed = speed;
+            this.color = color;
+            this.brake = function () {
+                speed -= 10;
+            }
+            this.accel = function () {
+                speed += 10;
+            }
+        }
+
+        myCar = new Car("520d", 60, "red")
+        document.write("모델:" + myCar.model + " 속도:" + myCar.speed);
+    </script>
+</body>
+</html>
