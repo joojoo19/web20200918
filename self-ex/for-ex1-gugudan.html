@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" id="input1">
+    <button onclick="show()">구구단을 외자!</button>
+    <p id="result"></p>
+
+<script>
+        function show() {
+            var num = document.getElementById("input1").value;
+            num = Number(num)
+            var txt = "";
+
+            for (var i = 1; i < 10; i++) {
+                txt += num + " &times;" + i + " = " + (num*i) + "<br>";
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+        // (num*i) 먼저 실행.
+        //  +=(할당연산자) 보다 + 가 먼저 실행.
+        //  += 의 가까운 곳부터 연산.
+        // &times;는 X
+    </script>
+</body>
+</html>
