@@ -83,11 +83,15 @@
             console.log(txt);
            }
            console.log("------- 문제8 -------");
+
            for (var i = 0; i < 5; i++) {
             var txt = "";         
-            for (var j = 0; j <= 4; j++) {
+            for (var j = 0; j <= i; j++) {
                 txt += i+j;
-
+            }
+            for (var j = 3; j >= i; j--) {
+                txt += 4-j;
+  
             }
             console.log(txt);
            }
