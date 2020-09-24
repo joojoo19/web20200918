@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        // splice : 지운 위치에 아이템을 추가 하거나 삭제 가능한 메소드.
+        // splice(열, 아이템삭제개수, 아이템) 
+        // splice(2,0,아이템) : 2번째 열에 아이템추가, 0개 삭제.
+        // splice(0,1) : 0번째에서 1개의 아이템 삭제.
+
+        var heros = ["cap", "hulk", "thor", "thanos"];
+        
+        heros.splice(1,0);
+
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+
+         heros.splice(1, 0, "batman", "superman")
+         for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+         }
+
+
+    </script>
+</body>
+</html>

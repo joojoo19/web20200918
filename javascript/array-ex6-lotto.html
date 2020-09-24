@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또 번호</button>
+    <div id="result"></div>
+    <script>
+
+        function lotto() {
+            var numbers = [];
+
+            while (numbers.length < 6) {
+              // for (var i = 0; i < 6; i++) {
+              // numbers.push(Math.floor(Math.random()*45)+ 1);
+              // push 메소드 안에 파라미터 1~45번까지 var numbers에 값을 랜덤으로 넣어줌.
+                var newNumber = Math.floor(Math.random()*45)+1;
+
+                if(!numbers.includes(newNumber)) {
+                    numbers.push(newNumber);
+                    // includes : 배열이 특정 요소를 포함하고 있는지 판별.
+                    // numbers가 newNumber의 값을 포함하지 않으면 newNumber의 값을 number로 출력.
+                }
+                // while문 실행 -> if문 실행 -> for문 -> innerHtml
+            }
+            var txt = "";
+
+            for (var i = 0; i < numbers.length; i++) {
+                txt += "<div>" + numbers[i] + "</div>";
+                // txt = <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+                // 할당연산자 오른쪽이 반복 될때 마다 왼쪽으로 추가됨. 것이 var txt로 출력.
+                // 처음에 빈 txt가 for문 1번 반복으로 <div>1</div> 생성. 
+                // for문 2번째 반복으로 <div>1</div> += <div>2</div> -> var txt = <div>1</div><div>2</div>
+            }
+             document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
