@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello')"; id="head1">Lorem.</h1>
+    <h1 onclick="show();" id="head2">Lorem, ipsum.</h1>
+    <h1 id="head3">Lorem, ipsum dolor.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+
+    <script>
+
+        var h4 = document.getElementById("head4");
+
+        h4.addEventListener("click", show); // 메소드("이벤트명", 함수자체)
+
+        var h3 = document.getElementById("head3");
+
+        h3.onclick = show; // 프로퍼티는 값을 가짐.
+                           // 함수 자체를 값으로 봄. show, show() 자체는 다름.
+                           // 값만 넣어주면 show()와 같은 행동을 함. 
+                           // 함수선언 위치와 상관없이 가장 위에 순서로 올라감.
+                           // show()는 함수를 실행한 결과가 onclick으로 감. 
+
+        function show() {
+            for (var i = 0; i < 3; i++) {
+                console.log(i);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
