@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 엘레멘트의 클라스명으로 가져 올때. -->
+    <h1 class="special">Lorem.</h1>
+    <h1 class="special">Dolorum!</h1>
+    <h1 class="special">Cum.</h1>
+    <h1 class="error">Lorem.</h1>
+    <h1 class="error">Unde?</h1>
+    <script>
+
+        var errors = document.getElementsByClassName("error");
+
+        console.log(errors.length);
+        console.log(errors[0].innerHTML);
+        console.log(errors[1].innerHTML);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+
+    <!-- 태그는 여러 엘레멘트를 가지고 있어서 태그로 가지고 올때는 
+        getElementsByTagName 사용하고  array를 사용 할 수 있음.-->
+    <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2">Dolore eaque est suscipit soluta!</h1>
+    <h1 id="head3">Est quibusdam delectus in eveniet!</h1>
+    <h1 id="head4">Quos saepe ducimus debitis quibusdam.</h1>
+    <h1 id="head5">At animi autem distinctio minima?</h1>
+    <script>
+
+        var head1 = document.getElementById("head1");
+        var heads = document.getElementsByTagName("h1");
+        console.log(heads.length);
+
+        for (var i = 0; i <heads.length; i++) {
+            console.log(heads[i].innerHTML);
+        }
+
+    </script>
+</body>
+</html>
