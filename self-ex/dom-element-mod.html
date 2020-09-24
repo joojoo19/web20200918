@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="ex">여기가 div로 선언되었습니다.</div>
+    <button onclick="get()">div요소 내용 출력하기</button>
+    <button onclick="set()">div요소 내용 변경하기</button>
+    <script>
+        function get() {
+            var val = document.getElementById("ex").innerHTML;
+            alert(val);
+        }
+        function set() { 
+            document.getElementById("ex").innerHTML = "변경되었습니다.";
+        }
+    </script>
+</body>
+</html>
