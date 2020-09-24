@@ -15,11 +15,13 @@
                 txt += "*";
             }
             console.log(txt);
+            // 각 줄은 밖에 for문.
+            // 각 줄에 반복되는 횟수는 중복 for문. 
            }
         console.log("------- 문제2 -------");
         for (var i = 0; i < 5; i++) {
             var txt = "";
-            for (var j = 4; j >= i; j--) {
+            for (var j = 0; j < (5-i); j++) {
                 txt += "*";
             }
             console.log(txt);
@@ -30,7 +32,7 @@
             for (var j = 0; j <= i; j++) {
                 txt += "*";
             }
-                for (var j = 4; j >= i; j--) {
+                for (var j = 0; j < (5-i); j++) {
                 txt += "#";
             }
             console.log(txt);
@@ -41,7 +43,7 @@
             for (var j = 0; j <= i; j++) {
                 txt += "#";
             }
-                for (var j = 4; j >= i; j--) {
+                for (var j = 0; j < (5-i); j++) {
                 txt += "*";
             }
             console.log(txt);
@@ -54,7 +56,7 @@
             for (var j = 0; j <= i; j++) {
                 txt += " ";
             }
-                for (var j = 4; j >= i; j--) {
+                for (var j = 0; j < (5-i); j++) {
                 txt += "*";
             }
             console.log(txt);
@@ -64,7 +66,7 @@
 
            for (var i = 0; i < 5; i++) {
             var txt = "";
-            for (var j = 4; j >= i; j--) {
+            for (var j = 0; j < (5-i); j++) {
                 txt += " ";
             } 
             for (var j = 0; j <= i; j++) {
@@ -76,17 +78,24 @@
            console.log("------- 문제7 -------");
 
            for (var i = 0; i < 5; i++) {
+             console.log("01234");
+           }
+
+           console.log("------- 문제7 -------");
+
+           for (var i = 0; i < 5; i++) {
             var txt = "";
-            for (var j = 0; j <= i; j++) {
-                txt = "01234";
+            for (var j = 0; j <5; j++) {
+                txt += j;
             }
             console.log(txt);
            }
+
            console.log("------- 문제8 -------");
            for (var i = 0; i < 5; i++) {
             var txt = "";         
-            for (var j = 0; j <= 4; j++) {
-                txt += i+j;
+            for (var j = i; j < i+5; j++) {
+                txt += j;
 
             }
             console.log(txt);
@@ -94,32 +103,21 @@
             console.log("------- 문제9 -------");
             for (var i = 0; i < 5; i++) {
             var txt = "";
-            num = Number(txt);
             for (var j = 0; j <= i; j++) {
                 txt += j;
             }
             console.log(txt);
            }
            console.log("------- 문제10 -------");
+           var k = 0;
             for (var i = 0; i < 5; i++) {
             var txt = "";         
             for (var j = 0; j <= i; j++) {
-                txt += i+j;
+                txt += (k % 10);
+                k++;
             }
             console.log(txt);
            }
     </script>
-
-    <!-- 0
-         12
-         345
-         6789
-         01234 
-a
-        01234
-        12345
-        23456
-        34567
-        45678-->
-</body>
+    </body>
 </html>
