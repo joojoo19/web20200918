@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head!">Lorem.</h1>
+    <h1 id="head2">Lorem.</h1>
+    <h1 id="head3">Lorem.</h1>
+    <h1 id="head4">Lorem.</h1>
+    </h1>
+    <script>
+        function myFunc() {
+            console.log('my function');
+        }
+
+        var afunc = function() {
+            console.log("이름없는 함수"); // 이름없는 함수를 변수에 할당해서 사용할 수 있음.
+        }
+        $("#head4").click(function() {
+            console.log("이름없는 함수22"); // 실행함수를 click(파라미터)에 넣어서 실행.
+        });
+        $("#head3").click(afunc); // #head3 요소를 클릭하면 afunc변수가 실행됨.
+        $("#head2").click(myFunc); // #head2 요소를 클릭하면 myFunc함수가 실행됨.
+        $("#head1").click(); // 클릭했을 때 실행되는 코드들을 파라미터로 갖을수 있음.
+    </script>
+</body>
+</html>
