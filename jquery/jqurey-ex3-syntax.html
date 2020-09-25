@@ -7,13 +7,18 @@
     </style>
 </head>
 <body>
-    <h1>Lorem.</h1>
-    <script>
-        var t = $("h1").text();  // h1의 text를 선택.
-        // 기본구문. $(selector).method()
-        // selector는 css selector를 기반으로 하며 추가로 자체 사용가 지정 selector가 있음.
 
-        console.log(t);
+    <h1 id="head1">Lorem.</h1>
+
+    <script>
+        var txt = $("#head1").text();
+        console.log(txt);
+
+       // var t2 = document.getElementById("head1").innerHTML;
+       // console.log(t2); -> 위에 결과와 같음.
+
+       $(".myclass");
+       $()
     </script>
 </body>
 </html>

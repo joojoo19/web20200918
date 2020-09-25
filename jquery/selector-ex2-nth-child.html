@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            border: 1px solid black;
+            width : 100px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Amet.</td>
+            <td>Inventore?</td>
+            <td>Fuga.</td>
+            <td>Repellendus.</td>
+            <td>Eveniet?</td>
+        </tr>
+        <tr>
+            <td>Recusandae.</td>
+            <td>Amet.</td>
+            <td>Omnis?</td>
+            <td>Illo?</td>
+            <td>Laboriosam.</td>
+            <td>Consequuntur.</td>
+        </tr>
+        <tr>
+            <td>Corrupti.</td>
+            <td>Repellendus?</td>
+            <td>Cupiditate.</td>
+            <td>Enim.</td>
+            <td>Exercitationem?</td>
+            <td>In.</td>
+        </tr>
+        <tr>
+            <td>Voluptates?</td>
+            <td>Architecto!</td>
+            <td>Sunt.</td>
+            <td>Mollitia.</td>
+            <td>Quae.</td>
+            <td>Quod.</td>
+        </tr>
+        <tr>
+            <td>Assumenda.</td>
+            <td>Ratione.</td>
+            <td>Amet.</td>
+            <td>Voluptate.</td>
+            <td>Mollitia?</td>
+            <td>Ex!</td>
+        </tr>
+    </table>
+    <script>
+        //  $("tr:odd").hide();
+        $("tr:nth-child(2n)").hide(); // 해석 : 누군가의 2에 배수의 자식행을 숨겨라.
+        $("td:nth-child(2n)").hide();
+</script>
+</body>
+</html>
