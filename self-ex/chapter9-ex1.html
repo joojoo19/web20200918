@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+       
+    </script>
+</head>
+<body>
+    <div id="input"> </div>
+    <button onclick="show()" id="bnt1" >과일</button>
+
+    <script>
+          function show() {
+                var arr = ["사과", "오렌지", "귤", "당근", "케일"];
+                var num = Math.floor(Math.random()*5) + 0;
+                num = Number(num)
+
+                ft = arr[num];
+
+          document.getElementById("input").innerHTML = ft;
+          }   
+                
+   
+           
+    </script>
+</body>
+</html>

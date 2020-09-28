@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            color: blue;
+            font-size: 20;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#input1").keyup(function() {
+                var t = $("#input1").val();
+                $("#result").text(t);
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <div id="result"></div>
+</body>
+</html>
