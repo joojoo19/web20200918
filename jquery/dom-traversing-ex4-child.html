@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("div").children().css("border", "5px solid green"); 
+            //children() - 직접적인 자식, 선택한 요소의 모든 직계 자식을 반환
+            // p엘레멘트에 css적용
+            $("div").children(".note").css("color", "hotpink");
+            $("div>.note").css("background-color", "skyblue")
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p class="note"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo autem repudiandae quod odit, ratione aut earum officiis asperiores enim cum similique esse, qui quam adipisci eos ducimus pariatur nemo sunt.</span></p>
+    </div>
+    <div>
+        <p class="note"><span>Similique corporis, autem labore beatae dolorem tempora quae officia iste praesentium voluptatem minus, consequatur eligendi fugiat! Sed, tempora perferendis! Perferendis, magnam deserunt voluptatem expedita alias odio repudiandae aut quidem sed.</span></p>
+    </div>
+    <div>
+        <p><span>Cumque nulla officiis esse tenetur fuga nam blanditiis expedita hic quas voluptatem quibusdam culpa, minus doloribus magnam, saepe, ex tempore numquam delectus ducimus repellat. Beatae eaque quaerat veritatis voluptatem fuga!</span></p>
+    </div>
+</body>
+</html>
