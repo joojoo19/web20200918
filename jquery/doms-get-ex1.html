@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            var t = $("#head1").text();
+            var h = $("#head2").html();
+            var g = $("#input1").val();
+
+            console.log(t);
+            console.log(h);
+            console.log(g);
+
+            $("#input1").keyup(function() {
+                var val = $(this).val();
+                console.log(val);
+            });
+
+            // text() - 선택한 요소의 텍스트 내용을 설정하거나 반환
+            // html() - 선택한 요소 (HTML 마크 업 포함)의 내용을 설정하거나 반환
+            // val() - 양식 필드의 값을 설정하거나 반환
+
+        });
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem, <span>ipsum</span> dolor.</h1>
+    <h1 id="head2">Facere, <span>et</span> distinctio!</h1>
+    <h1 id="head3">Officia, quisquam earum.</h1>
+
+    <input type="text" id="input1" value="korea">
+
+</body>
+</html>
