@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").remove(); // remove() -선택한 요소 (및 하위 요소)를 제거합니다. 시작종료태그 포함한 엘레멘트를 삭제.
+            $("#div2").empty();  // empty() -선택한 요소에서 하위 요소를 제거합니다. 시작종료태그를 남기고 삭제.
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet.</div>
+    <div id="div2">Dolorum magni laudantium nostrum velit.</div>
+
+</body>
+</html>
