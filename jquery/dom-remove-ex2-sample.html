@@ -11,11 +11,11 @@
                 var txt = $("#input1").val();
                 var li = $("<li />");
 
-                li.text(txt);
-                li.click(function() {
+                li.text(txt); // li text추가.
+                li.click(function() { // li를 클릭했을때 클릭이벤트를 받은 엘레멘트(this.li)를 삭제.
                     $(this).remove();
                 })
-                
+
                 $("#result").append(li);
 
             });
