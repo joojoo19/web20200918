@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").append("<h1>hello</h1>");
+            $("#div2").append("<p></p>");
+            $("#div2").append("<p />"); // <p></p>빈 element는 <p />로 간단하게 가능.
+            
+            var newPara = $("<p />"); // -> jquery 객체, seletor뿐만 아니라 태그를 적을 수도 있음.
+            newPara.text("hello");
+            $("#div4").append(newPara); // jquery 객체의 파라미터를 받을수 있음.
+
+            // var newPara = $("<p />"); 
+            // $("#div4").append(newPara)
+            // newPara.text("hello"); 
+            // 위에랑 같은 결과 dom이 만들어지고 변경되나 만들어지기 전에 변경되나 같음.
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div2">Lorem, ipsum dolor.</div>
+    <div id="div3">Lorem ipsum dolor sit.</div>
+    <div id="div4">Lorem ipsum dolor sit.</div>
+</body>
+</html>
