@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("span").parents().css("border", "5px solid green");
+            // parents()메서드는 문서의 루트 요소 ( <html>) 까지 
+            // 선택한 요소의 모든 상위 요소를 반환
+            // p -> div -> body -> html
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, dolorum repellat a asperiores explicabo illo tempora quia ipsum soluta eveniet, adipisci quibusdam odit culpa dignissimos! Quisquam ut soluta minima molestiae!</span></p>
+    </div>
+</body>
+</html>
