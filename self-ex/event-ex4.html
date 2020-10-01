@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("input").focus(function() {
+                    $(this).css("background-color", "#FFD8D8");
+            });
+            $("input").blur(function() {
+                $(this).css("background-color", "#faf4c0")
+            });
+	                      
+
+        });
+    </script>
+</head>
+<body>
+    Name : <input type="text" name="name"><br>
+    Email : <input type="text" name="email">
+</body>
+</html>
